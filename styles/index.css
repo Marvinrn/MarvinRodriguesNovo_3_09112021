@@ -10,7 +10,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 431px) {
   form {
     margin-top: 15px;
     display: -webkit-box;
@@ -42,7 +42,7 @@ body {
     margin-bottom: auto;
   }
   .intro__section {
-    background-color: rgba(233, 229, 229, 0.3);
+    background-color: rgba(233, 229, 229, 0.4);
   }
   .intro {
     padding-top: 25px;
@@ -68,9 +68,44 @@ body {
     border: 2px solid white;
     border-radius: 100px;
   }
+  .functionality {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .functionality .tab {
+    background-color: rgba(233, 229, 229, 0.4);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin-top: 25px;
+    padding: 20px 0 20px 0;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+    border-radius: 25px;
+  }
+  .functionality .tab__rank {
+    position: relative;
+    margin-right: 30px;
+    padding: 3px 7px 3px 7px;
+    background-color: #9356DC;
+    color: white;
+    border-radius: 100%;
+  }
+  .functionality .tab__icon {
+    margin-right: 30px;
+  }
 }
 
-@media only screen and (max-width: 430px) {
+@media only screen and (max-width: 431px) {
   .header {
     width: 100%;
   }
