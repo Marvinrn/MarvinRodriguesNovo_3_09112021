@@ -1,0 +1,59 @@
+@media only screen and (max-width : 430px){
+    form{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border-top: 2px solid rgba(128, 128, 128, 0.171);
+        background-color: rgb(233, 229, 229);
+        
+
+        .form__input{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            text-align: center;
+            background-color: rgb(233, 229, 229);
+            border: none;
+            font-weight: bold;
+
+            &:focus{
+                outline: none;
+            }
+        }
+
+        .location-icon{
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+    }
+
+    .intro__section{
+        background-color: rgba(233, 229, 229,0.3);
+    }
+    .intro{
+        padding-top: 25px;
+        padding-bottom: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+        text-align: center;
+
+        &__title{
+            font-weight: bold;
+        }
+
+        &__description{
+            margin-top: 10px;
+            color: rgb(117, 117, 117);
+        }
+
+        &__btn{
+            background: linear-gradient($color-2, $color-1);
+            margin-top: 15px;
+            padding: 10px;
+            color: white;
+            border: 2px solid white;
+            border-radius: 100px;
+        }
+    }
+}

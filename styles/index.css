@@ -1,8 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 430px) {
+  form {
+    margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-top: 2px solid rgba(128, 128, 128, 0.171);
+    background-color: #e9e5e5;
+  }
+  form .form__input {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    background-color: #e9e5e5;
+    border: none;
+    font-weight: bold;
+  }
+  form .form__input:focus {
+    outline: none;
+  }
+  form .location-icon {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .intro__section {
+    background-color: rgba(233, 229, 229, 0.3);
+  }
+  .intro {
+    padding-top: 25px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+  }
+  .intro__title {
+    font-weight: bold;
+  }
+  .intro__description {
+    margin-top: 10px;
+    color: #757575;
+  }
+  .intro__btn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px;
+  }
 }
 
 @media only screen and (max-width: 430px) {
