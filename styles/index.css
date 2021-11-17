@@ -11,9 +11,12 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.menu--body {
+  background-color: #e9e5e5;
+}
+
 @media only screen and (max-width: 431px) {
   form {
-    margin-top: 15px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -70,6 +73,11 @@ body {
     border-radius: 100px;
     cursor: pointer;
   }
+  .intro__btn:hover {
+    opacity: 0.8;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+  }
   .functionality {
     margin-top: 40px;
     margin-bottom: 40px;
@@ -95,9 +103,15 @@ body {
     border-radius: 25px;
     cursor: pointer;
   }
+  .functionality .tab:hover {
+    background-color: rgba(246, 191, 255, 0.4);
+  }
+  .functionality .tab:hover .tab__icon {
+    color: #9356DC;
+  }
   .functionality .tab__rank {
-    position: relative;
-    margin-right: 30px;
+    position: absolute;
+    left: 10px;
     padding: 3px 7px 3px 7px;
     background-color: #9356DC;
     color: white;
@@ -105,6 +119,7 @@ body {
   }
   .functionality .tab__icon {
     margin-right: 30px;
+    padding-left: 40px;
   }
   .restaurants__section {
     background-color: rgba(233, 229, 229, 0.4);
@@ -173,49 +188,331 @@ body {
     margin-right: 25px;
     font-size: 2em;
   }
+  .restaurants__section .restaurants .cards__like-btn:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media only screen and (max-width: 431px) {
+  .menu-banner {
+    width: 100%;
+    height: 300px;
+  }
+  .menu {
+    position: relative;
+    bottom: 60px;
+    background-color: #e9e5e5;
+    padding-bottom: 100px;
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+  }
+  .menu .menu--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-top: 25px;
+  }
+  .menu__title {
+    font-family: "Shrikhand", sans-serif;
+    margin-left: 15px;
+  }
+  .menu__like-btn {
+    font-size: 1.5em;
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .dish {
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  .dish__title {
+    border-bottom: 4px solid #99E2D0;
+    width: 50px;
+  }
+  .dish__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background-color: white;
+    margin-top: 25px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .dish__name {
+    font-weight: bold;
+  }
+  .dish__ingredients {
+    font-size: 0.9em;
+  }
+  .dish__price {
+    font-weight: bold;
+  }
+  .order {
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+  }
+  .order__btn {
+    background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+    background: linear-gradient(#FF79DA, #9356DC);
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px;
+    cursor: pointer;
+    font-size: 1.5em;
+  }
+  .order__btn:hover {
+    opacity: 0.8;
+    -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+  }
+  .entry--animation {
+    -webkit-animation: first-appearing 1s;
+            animation: first-appearing 1s;
+  }
+  @-webkit-keyframes first-appearing {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes first-appearing {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .dish--animation {
+    -webkit-animation: first-appearing 2.5s;
+            animation: first-appearing 2.5s;
+  }
+  @keyframes first-appearing {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .desert--animation {
+    -webkit-animation: first-appearing 3.5s;
+            animation: first-appearing 3.5s;
+  }
+  @keyframes first-appearing {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+
+.loader__section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 80px;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: white;
+  -webkit-animation: loader 2s forwards;
+          animation: loader 2s forwards;
+}
+
+.loader__section .loader {
+  position: relative;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, transparent, transparent 40%, #FF79DA);
+  -webkit-animation: spinner 3s forwards;
+          animation: spinner 3s forwards;
+}
+
+.loader__section .loader::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background-color: white;
+  border-radius: 50%;
+  z-index: 1000;
+}
+
+.loader__section .loader::after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: #9356DC;
+  border-radius: 50%;
+  z-index: 1;
+  background: linear-gradient(45deg, transparent, transparent 40%, #FF79DA);
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+
+@-webkit-keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    width: 0%;
+    height: 0%;
+  }
+}
+
+@-webkit-keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    opacity: 0;
+  }
 }
 
 @media only screen and (max-width: 431px) {
   .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     width: 100%;
+    padding-bottom: 15px;
+    background-color: white;
   }
-  .header .header__logo {
+  .header__icon {
+    margin-left: 15px;
+    font-size: 1.5em;
+    color: black;
+    padding-top: 20px;
+  }
+  .header__logo {
     display: block;
     width: 200px;
     margin: auto;
-    margin-top: 25px;
+    padding-top: 25px;
   }
 }
 
-.footer {
-  background-color: #333333;
-  padding-top: 25px;
-  padding-bottom: 35px;
-}
-
-.footer__logo {
-  font-family: "Shrikhand", sans-serif;
-  font-size: 1.5em;
-  color: white;
-  margin-left: 15px;
-  margin-bottom: 15px;
-}
-
-.footer__link {
-  margin-left: 15px;
-  margin-top: 10px;
-  color: white;
-  font-size: 1.2em;
-  cursor: pointer;
-}
-
-.footer__link:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-  font-weight: bold;
-}
-
-.footer__icon {
-  margin-right: 10px;
+@media only screen and (max-width: 431px) {
+  .footer {
+    background-color: #333333;
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  .footer__logo {
+    font-family: "Shrikhand", sans-serif;
+    font-size: 1.5em;
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
+  .footer__link {
+    margin-left: 15px;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .footer__link:hover {
+    -webkit-transform: scale(1.03);
+            transform: scale(1.03);
+    font-weight: bold;
+  }
+  .footer__icon {
+    margin-right: 10px;
+  }
+  .footer .contact__link {
+    margin-top: 5px;
+  }
 }
 /*# sourceMappingURL=index.css.map */

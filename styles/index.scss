@@ -3,8 +3,9 @@
 //////////////pages/////////////
 
 @import './pages/home';
+@import './pages/menus';
 
 /////////////components/////////////
-
+@import './components/loader';
 @import './components/header';
 @import './components/footer';
