@@ -226,8 +226,8 @@ form .location-icon {
 
 .restaurants__section .restaurants .cards__like-btn .full-heart {
   color: white;
-  -webkit-transition: all 1s ease-in;
-  transition: all 1s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
 }
 
 .restaurants__section .restaurants .cards__like-btn .full-heart:hover {
@@ -331,18 +331,14 @@ form .location-icon {
 }
 
 .dish__checked {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  visibility: hidden;
-  display: none;
-  width: 0%;
-  height: 0%;
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+  -webkit-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
   background-color: #99E2D0;
-  -webkit-transition: all 10s ease-in-out;
-  transition: all 10s ease-in-out;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .dish__cards:hover {
@@ -367,11 +363,9 @@ form .location-icon {
   position: relative;
   visibility: visible;
   display: initial;
-  padding: 15px 10px 15px 10px;
+  padding: 20px 10px 15px 10px;
   width: 25%;
   height: 100%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
 }
 
 .dish__cards:hover .dish__checked .check__icon {
