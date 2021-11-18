@@ -1,178 +1,176 @@
-@media only screen and (max-width : 431px){
-    form{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        border-top: 2px solid rgba(128, 128, 128, 0.171);
-        background-color: rgb(233, 229, 229);
+form{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: 2px solid rgba(128, 128, 128, 0.171);
+    background-color: rgb(233, 229, 229);
         
 
-        .form__input{
-            padding-top: 15px;
-            padding-bottom: 15px;
-            text-align: center;
-            background-color: rgb(233, 229, 229);
-            border: none;
-            font-weight: bold;
-
-            &:focus{
-                outline: none;
-            }
-        }
-
-        .location-icon{
-            margin-top: auto;
-            margin-bottom: auto;
-        }
-    }
-
-    .intro__section{
-        background-color: rgba(233, 229, 229,0.4);
-    }
-    .intro{
-        padding-top: 25px;
-        padding-bottom: 40px;
-        margin-left: auto;
-        margin-right: auto;
-        width: 65%;
+    .form__input{
+        padding-top: 15px;
+        padding-bottom: 15px;
         text-align: center;
+        background-color: rgb(233, 229, 229);
+        border: none;
+        font-weight: bold;
 
-        &__title{
-            font-weight: bold;
-        }
-
-        &__description{
-            margin-top: 10px;
-            color: rgb(117, 117, 117);
-        }
-
-        &__btn{
-            background: linear-gradient($color-2, $color-1);
-            margin-top: 15px;
-            padding: 10px;
-            color: white;
-            border: 2px solid white;
-            border-radius: 100px;
-            cursor: pointer;
-
-            &:hover{
-                opacity: 0.8;
-                box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
-            }
+        &:focus{
+            outline: none;
         }
     }
 
-    .functionality{
-        margin-top: 40px;
+    .location-icon{
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
+
+.intro__section{
+    background-color: rgba(233, 229, 229,0.4);
+}
+
+.intro{
+    padding-top: 25px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+
+    &__title{
+        font-weight: bold;
+    }
+
+    &__description{
+        margin-top: 10px;
+        color: rgb(117, 117, 117);
+    }
+
+    &__btn{
+        background: linear-gradient($color-2, $color-1);
+        margin-top: 15px;
+        padding: 10px;
+        color: white;
+        border: 2px solid white;
+        border-radius: 100px;
+        cursor: pointer;
+
+        &:hover{
+            opacity: 0.8;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+        }
+    }
+}
+
+.functionality{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+
+    .tab{
+        background-color: rgba(233, 229, 229,0.4);
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-top: 25px;
+        padding: 20px 0 20px 0;
+        box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+        border-radius: 25px;
+        cursor: pointer;
+
+        &:hover{
+            background-color: rgba(246, 191, 255, 0.4);
+
+            .tab__icon{
+                color: $color-1;
+            }
+        }
+
+        &__rank{
+            position: absolute;
+            left: 10px;
+            padding: 3px 7px 3px 7px;
+            background-color: $color-1;
+            color: white;
+            border-radius: 100%;
+        }
+
+        &__icon{
+            margin-right: 30px;
+            padding-left: 40px;
+        }
+    }}
+
+.restaurants__section{
+    background-color: rgba(233, 229, 229,0.4);
+    padding-top: 20px;
+    padding-bottom: 30px;
+        
+
+    .restaurants{
+        margin-top: 20px;
         margin-bottom: 40px;
         margin-left: 20px;
         margin-right: 20px;
 
-        .tab{
-            background-color: rgba(233, 229, 229,0.4);
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
+
+        .cards{
+            position: relative;
+            margin-top: 20px;
             width: 100%;
-            margin-top: 25px;
-            padding: 20px 0 20px 0;
-            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+            height: 300px;
             border-radius: 25px;
+            background-color: white;
+            box-shadow: 0 2px 15px lightgrey;
             cursor: pointer;
 
-            &:hover{
-                background-color: rgba(246, 191, 255, 0.4);
-
-                .tab__icon{
-                    color: $color-1;
-                }
+            &__link{
+                text-decoration: none;
+                color: black;
             }
 
-            &__rank{
-                position: absolute;
-                left: 10px;
-                padding: 3px 7px 3px 7px;
-                background-color: $color-1;
-                color: white;
-                border-radius: 100%;
-            }
-
-            &__icon{
-                margin-right: 30px;
-                padding-left: 40px;
-            }
-        }
-    }
-
-    .restaurants__section{
-        background-color: rgba(233, 229, 229,0.4);
-        padding-top: 20px;
-        padding-bottom: 30px;
-        
-
-        .restaurants{
-            margin-top: 20px;
-            margin-bottom: 40px;
-            margin-left: 20px;
-            margin-right: 20px;
-
-
-            .cards{
-                position: relative;
-                margin-top: 20px;
+            &__img{
+                object-fit: cover;
+                border-top-left-radius: 15px;
+                border-top-right-radius: 15px;
                 width: 100%;
-                height: 300px;
-                border-radius: 25px;
-                background-color: white;
-                box-shadow: 0 2px 15px lightgrey;
-                cursor: pointer;
+                height: 200px;
+            }
 
-                &__link{
-                    text-decoration: none;
-                    color: black;
-                }
+            &__new{
+                background-color: $color-3;
+                color: rgb(21, 100, 21);
+                position: absolute;
+                top: 15px;
+                right: 0;
+                left: 75%;
+                width: 80px;
+                margin: 0;
+                padding: 8px 0 8px 0;
+                text-align: center;
+                border-radius: 3px;
+            }
 
-                &__img{
-                    object-fit: cover;
-                    border-top-left-radius: 15px;
-                    border-top-right-radius: 15px;
-                    width: 100%;
-                    height: 200px;
-                }
+            &__description{
+                padding-top: 15px;
+                margin-left: 15px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
 
-                &__new{
-                    background-color: $color-3;
-                    color: rgb(21, 100, 21);
-                    position: absolute;
-                    top: 15px;
-                    right: 0;
-                    left: 75%;
-                    width: 80px;
-                    margin: 0;
-                    padding: 8px 0 8px 0;
-                    text-align: center;
-                    border-radius: 3px;
-                }
+            &__city{
+                color: rgb(117, 117, 117);
+            }
 
-                &__description{
-                    padding-top: 15px;
-                    margin-left: 15px;
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-                }
+            &__like-btn{
+                margin-right: 25px;
+                font-size: 2em;
 
-                &__city{
-                    color: rgb(117, 117, 117);
-                }
-
-                &__like-btn{
-                    margin-right: 25px;
-                    font-size: 2em;
-
-                    &:hover{
-                        transform: scale(1.1);
-                    }
+                &:hover{
+                    transform: scale(1.1);
                 }
             }
         }

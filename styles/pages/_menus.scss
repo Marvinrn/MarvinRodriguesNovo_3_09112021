@@ -1,153 +1,153 @@
-@media only screen and (max-width : 431px){
-    .menu-banner{
-        width: 100%;
-        height: 300px;
-    }
+.menu-banner{
+    width: 100%;
+    height: 300px;
+}
 
-    .menu{
-        position: relative;
-        bottom: 60px;
-        background-color: rgb(233, 229, 229);
-        height: 100%;
-        border-top-left-radius: 50px;
-        border-top-right-radius: 50px;
+.menu{
+    position: relative;
+    bottom: 60px;
+    background-color: rgb(233, 229, 229);
+    height: 100%;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
 
-        .menu--flex{
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding-top: 25px;
-        }
-
-        &__title{
-            font-family: $font-2;
-            margin-left: 15px;
-        }
-
-        &__like-btn{
-            font-size: 1.5em;
-            margin-right: 50px;
-            cursor: pointer;
-        }
-    }
-
-    .dish{
-        margin-top: 25px;
-        margin-left: 15px;
-        margin-right: 15px;
-
-        &__title{
-            border-bottom: 4px solid $color-3;
-            width: 50px;
-        }
-
-        &__cards{
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-end;
-            background-color: white;
-            margin-top: 25px;
-            padding: 15px 10px 15px 10px;
-            border-radius: 15px;
-            cursor: pointer;
-        }
-
-        &__dish{
-            width: 300px;
-            overflow: hidden;
-            white-space: nowrap;
-            background-color: $color-3;
-        }
-
-        &__name{
-            width: 100%;
-            font-weight: bold;
-            text-overflow: ellipsis;  
-        }
-
-        &__ingredients{
-            width: 100%;
-            font-size: 0.9em;
-            text-overflow: ellipsis;  
-        }
-
-        &__price{
-            font-weight: bold;
-            padding-left: 10px;
-        }
-    }
-
-    .order{
+    .menu--flex{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding-top: 25px;
+    }
+
+    &__title{
+         font-family: $font-2;
+        margin-left: 15px;
+    }
+
+    &__like-btn{
+        font-size: 1.5em;
+        margin-right: 50px;
+        cursor: pointer;
+    }
+}
+
+.dish{
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+    &__title{
+        border-bottom: 4px solid $color-3;
+        width: 50px;
+        }
+
+    &__cards{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: white;
+        margin-top: 25px;
+        padding: 15px 10px 15px 10px;
+        border-radius: 15px;
+         cursor: pointer;
+    }
+
+    &__dish{
+        width: 300px;
+        overflow: hidden;
+    }
+
+    &__name{
+        width: 100%;
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;  
+    }
+
+    &__ingredients{
+        width: 100%;
+        font-size: 0.9em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;  
+    }
+
+    &__price{
+        font-weight: bold;
+        padding-left: 10px;
+    }
+}
+
+.order{
+    padding-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    text-align: center;
+
+    &__btn{
+           background: linear-gradient($color-2, $color-1);
+        margin-top: 15px;
         margin-left: auto;
         margin-right: auto;
-        width: 65%;
-        text-align: center;
+        padding: 10px;
+        color: white;
+        border: 2px solid white;
+        border-radius: 100px;
+        cursor: pointer;
+        font-size: 1.5em;
 
-        &__btn{
-            background: linear-gradient($color-2, $color-1);
-            margin-top: 15px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 10px;
-            color: white;
-            border: 2px solid white;
-            border-radius: 100px;
-            cursor: pointer;
-            font-size: 1.5em;
-
-            &:hover{
-                opacity: 0.8;
-                box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
-            }
+        &:hover{
+            opacity: 0.8;
+            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
         }
     }
+}
 /////////////////////////////////ANIMATIONS////////////////////////////////////////////////
-    .entry--animation{
-        animation: first-appearing 1s;
+.entry--animation{
+    animation: first-appearing 1s;
 
-        @keyframes first-appearing {
-            0%{
-                opacity: 0;
-            }
-            50%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
+    @keyframes first-appearing {
+        0%{
+             opacity: 0;
+        }
+        50%{
+             opacity: 0;
+        }
+        100%{
+            opacity: 1; 
+        }
         }
     }
 
-    .dish--animation{
-        animation: first-appearing 2s;
+.dish--animation{
+    animation: first-appearing 2s;
 
-        @keyframes first-appearing {
-            0%{
-                opacity: 0;
-            }
-            50%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
+    @keyframes first-appearing {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
         }
     }
+}
 
-    .desert--animation{
-        animation: first-appearing 3s;
+.desert--animation{
+    animation: first-appearing 3s;
 
-        @keyframes first-appearing {
-            0%{
-                opacity: 0;
-            }
-            50%{
-                opacity: 0;
-            }
-            100%{
-                opacity: 1;
-            }
+    @keyframes first-appearing {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
         }
     }
 }
