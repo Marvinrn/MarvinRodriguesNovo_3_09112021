@@ -10,11 +10,7 @@
     <title>OhMyFood</title>
 </head>
 
-<body>
-    <!----------------LOADER------------------>
-    <div class="loader__section">
-        <div class="loader"></div>
-    </div>
+<body class="home__page">
     <!----------------HEADER------------------>
     <header class="header">
         <img class="header__logo" src="./images/logo/ohmyfood.png" alt="logo" />
@@ -63,7 +59,10 @@
                             <h2 class="cards__title">La palette du goût</h2>
                             <p class="cards__city">Ménilmontant</p>
                         </div>
-                        <i class="far fa-heart cards__like-btn "></i>
+                        <span class="cards__like-btn fa-stack">
+                            <i class="far fa-heart fa-stack-1x empty-heart"></i>
+                            <i class="fas fa-heart fa-stack-1x full-heart"></i>   
+                        </span>
                     </div>
                 </a>
             </div>
@@ -76,7 +75,10 @@
                             <h2 class="cards__title">La note enchantée</h2>
                             <p class="cards__city">Charonne</p>
                         </div>
-                        <i class="far fa-heart cards__like-btn "></i>
+                        <span class="cards__like-btn fa-stack">
+                            <i class="far fa-heart fa-stack-1x empty-heart"></i>
+                            <i class="fas fa-heart fa-stack-1x full-heart"></i>   
+                        </span>
                     </div>
                 </a>
             </div>
@@ -88,7 +90,10 @@
                             <h2 class="cards__title">À la française</h2>
                             <p class="cards__city">Cité Rouge</p>
                         </div>
-                        <i class="far fa-heart cards__like-btn "></i>
+                        <span class="cards__like-btn fa-stack">
+                            <i class="far fa-heart fa-stack-1x empty-heart"></i>
+                            <i class="fas fa-heart fa-stack-1x full-heart"></i>   
+                        </span>
                     </div>
                 </a>
             </div>
@@ -100,7 +105,10 @@
                             <h2 class="cards__title">Le délice des sens</h2>
                             <p class="cards__city">Folie-Méricourt</p>
                         </div>
-                        <i class="far fa-heart cards__like-btn "></i>
+                        <span class="cards__like-btn fa-stack">
+                            <i class="far fa-heart fa-stack-1x empty-heart"></i>
+                            <i class="fas fa-heart fa-stack-1x full-heart"></i>   
+                        </span>
                     </div>
                 </a>
             </div>
@@ -116,6 +124,10 @@
             <p class="contact__link"><a href="mailto:marvinnrn@gmail.com" class="footer__link">Contact</a></p>
         </div>
     </footer>
+    <!----------------LOADER------------------>
+    <div class="loader__section">
+        <div class="loader"></div>
+    </div>
 </body>
 
 </html>

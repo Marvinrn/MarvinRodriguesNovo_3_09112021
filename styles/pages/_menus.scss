@@ -45,14 +45,14 @@
         justify-content: space-between;
         align-items: flex-end;
         background-color: white;
-        margin-top: 25px;
         padding: 15px 10px 15px 10px;
+        margin-top: 25px;
         border-radius: 15px;
-         cursor: pointer;
+        cursor: pointer;
     }
 
     &__dish{
-        width: 300px;
+        width: 100%;
         overflow: hidden;
     }
 
@@ -73,8 +73,71 @@
     }
 
     &__price{
+        height: 100%;
         font-weight: bold;
         padding-left: 10px;
+    }
+
+    &__checked{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        visibility: hidden;
+        display: none;
+        width: 0%;
+        height: 0%;
+        background-color: $color-3;
+        transition: all 10s ease-in-out;
+    }
+    
+    &__cards:hover{
+        padding: 0;
+        
+
+        .dish__name{
+            padding: 0 10px;
+        }
+
+        .dish__ingredients{
+            padding: 0 10px 15px 10px;
+        }
+
+        .dish__price{
+            padding-right: 15px;
+            padding-bottom: 15px;
+            padding-left: 0;
+        }
+
+        .dish__checked{
+            position: relative;
+            visibility: visible;
+            display: initial;
+            padding: 15px 10px 15px 10px;
+            width: 25%;
+            height: 100%;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+
+
+            .check__icon{
+               text-align: center;
+                font-size: 2em;
+                color: white;
+                margin-left: 10px;
+                animation: spin .5s forwards;
+            }
+
+            @keyframes spin {
+                0%{
+                    transform: rotate(0deg);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+        }
     }
 }
 

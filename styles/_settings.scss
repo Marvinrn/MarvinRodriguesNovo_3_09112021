@@ -13,6 +13,10 @@ body{
     font-family: $font-1;
 }
 
+.home__page{
+    z-index: 1;
+}
+
 .menu--body{
     background-color: rgb(233, 229, 229);
 }

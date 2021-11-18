@@ -164,13 +164,29 @@ form{
             &__city{
                 color: rgb(117, 117, 117);
             }
+            
 
             &__like-btn{
                 margin-right: 25px;
                 font-size: 2em;
 
-                &:hover{
-                    transform: scale(1.1);
+                .empty-heart{
+                    font-size: 1.1em;
+
+                    &:hover{
+                        color: $color-1;
+                    }
+                }
+
+                .full-heart{
+                    color: white;
+                    transition: all 1s ease-in;
+                
+                    &:hover{
+                        visibility: visible;
+                        color: $color-1;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }

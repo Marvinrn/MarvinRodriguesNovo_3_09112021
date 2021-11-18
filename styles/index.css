@@ -11,6 +11,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.home__page {
+  z-index: 1;
+}
+
 .menu--body {
   background-color: #e9e5e5;
 }
@@ -212,7 +216,23 @@ form .location-icon {
   font-size: 2em;
 }
 
-.restaurants__section .restaurants .cards__like-btn:hover {
+.restaurants__section .restaurants .cards__like-btn .empty-heart {
+  font-size: 1.1em;
+}
+
+.restaurants__section .restaurants .cards__like-btn .empty-heart:hover {
+  color: #9356DC;
+}
+
+.restaurants__section .restaurants .cards__like-btn .full-heart {
+  color: white;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+
+.restaurants__section .restaurants .cards__like-btn .full-heart:hover {
+  visibility: visible;
+  color: #9356DC;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -277,14 +297,14 @@ form .location-icon {
       -ms-flex-align: end;
           align-items: flex-end;
   background-color: white;
-  margin-top: 25px;
   padding: 15px 10px 15px 10px;
+  margin-top: 25px;
   border-radius: 15px;
   cursor: pointer;
 }
 
 .dish__dish {
-  width: 300px;
+  width: 100%;
   overflow: hidden;
 }
 
@@ -305,8 +325,84 @@ form .location-icon {
 }
 
 .dish__price {
+  height: 100%;
   font-weight: bold;
   padding-left: 10px;
+}
+
+.dish__checked {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  visibility: hidden;
+  display: none;
+  width: 0%;
+  height: 0%;
+  background-color: #99E2D0;
+  -webkit-transition: all 10s ease-in-out;
+  transition: all 10s ease-in-out;
+}
+
+.dish__cards:hover {
+  padding: 0;
+}
+
+.dish__cards:hover .dish__name {
+  padding: 0 10px;
+}
+
+.dish__cards:hover .dish__ingredients {
+  padding: 0 10px 15px 10px;
+}
+
+.dish__cards:hover .dish__price {
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 0;
+}
+
+.dish__cards:hover .dish__checked {
+  position: relative;
+  visibility: visible;
+  display: initial;
+  padding: 15px 10px 15px 10px;
+  width: 25%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.dish__cards:hover .dish__checked .check__icon {
+  text-align: center;
+  font-size: 2em;
+  color: white;
+  margin-left: 10px;
+  -webkit-animation: spin .5s forwards;
+          animation: spin .5s forwards;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
 }
 
 .order {
@@ -465,8 +561,7 @@ form .location-icon {
   }
   100% {
     opacity: 0;
-    width: 0%;
-    height: 0%;
+    z-index: -1;
   }
 }
 
@@ -479,8 +574,7 @@ form .location-icon {
   }
   100% {
     opacity: 0;
-    width: 0%;
-    height: 0%;
+    z-index: -1;
   }
 }
 
