@@ -30,87 +30,91 @@
     <!----------------FUNCTIONNALITY SECTION------------------>
     <section class="functionality">
         <h1 class="functionality__title">Fonctionnement</h1>
-        <diV class="tab">
-            <p class="tab__rank">1</p>
-            <i class="fas fa-mobile-alt tab__icon"></i>
-            <p class="tab__title">Choisissez un restaurant</p>
-        </diV>
-        <diV class="tab">
-            <p class="tab__rank">2</p>
-            <i class="fas fa-list-ul tab__icon"></i>
-            <p class="tab__title">Composez votre menu</p>
-        </diV>
-        <diV class="tab">
-            <p class="tab__rank">3</p>
-            <i class="fas fa-store tab__icon"></i>
-            <p class="tab__title">Dégustez au restaurant</p>
-        </diV>
+        <div class="functionality--flex">
+            <diV class="tab">
+                <p class="tab__rank">1</p>
+                <i class="fas fa-mobile-alt tab__icon"></i>
+                <p class="tab__title">Choisissez un restaurant</p>
+            </diV>
+            <diV class="tab">
+                <p class="tab__rank">2</p>
+                <i class="fas fa-list-ul tab__icon"></i>
+                <p class="tab__title">Composez votre menu</p>
+            </diV>
+            <diV class="tab">
+                <p class="tab__rank">3</p>
+                <i class="fas fa-store tab__icon"></i>
+                <p class="tab__title">Dégustez au restaurant</p>
+            </diV>
+        </div>
     </section>
     <!----------------RESTAURANTS SECTION------------------>
     <section class="restaurants__section">
         <div class="restaurants">
             <h1 class="restaurants__title">Restaurants</h1>
-            <div class="cards">
-                <a href="./pages-menus/menu1.html" class="cards__link">
-                    <p class="cards__new">Nouveau</p>
-                    <img class="cards__img" src="./images/restaurants/palette.jpg" alt="plat" />
-                    <div class="cards__description">
-                        <div>
-                            <h2 class="cards__title">La palette du goût</h2>
-                            <p class="cards__city">Ménilmontant</p>
+            <div class="cards--flex">
+                <div class="cards">
+                    <a href="./pages-menus/menu1.html" class="cards__link">
+                        <p class="cards__new">Nouveau</p>
+                        <img class="cards__img" src="./images/restaurants/palette.jpg" alt="plat" />
+                        <div class="cards__description">
+                            <div>
+                                <h2 class="cards__title">La palette du goût</h2>
+                                <p class="cards__city">Ménilmontant</p>
+                            </div>
+                            <span class="cards__like-btn fa-stack">
+                                <i class="far fa-heart fa-stack-1x empty-heart"></i>
+                                <i class="fas fa-heart fa-stack-1x full-heart"></i>
+                            </span>
                         </div>
-                        <span class="cards__like-btn fa-stack">
-                            <i class="far fa-heart fa-stack-1x empty-heart"></i>
-                            <i class="fas fa-heart fa-stack-1x full-heart"></i>   
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="cards">
-                <a href="./pages-menus/menu2.html" class="cards__link">
-                    <p class="cards__new">Nouveau</p>
-                    <img class="cards__img" src="./images/restaurants/note.jpg" alt="plat" />
-                    <div class="cards__description">
-                        <div>
-                            <h2 class="cards__title">La note enchantée</h2>
-                            <p class="cards__city">Charonne</p>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="./pages-menus/menu2.html" class="cards__link">
+                        <p class="cards__new">Nouveau</p>
+                        <img class="cards__img" src="./images/restaurants/note.jpg" alt="plat" />
+                        <div class="cards__description">
+                            <div>
+                                <h2 class="cards__title">La note enchantée</h2>
+                                <p class="cards__city">Charonne</p>
+                            </div>
+                            <span class="cards__like-btn fa-stack">
+                                <i class="far fa-heart fa-stack-1x empty-heart"></i>
+                                <i class="fas fa-heart fa-stack-1x full-heart"></i>
+                            </span>
                         </div>
-                        <span class="cards__like-btn fa-stack">
-                            <i class="far fa-heart fa-stack-1x empty-heart"></i>
-                            <i class="fas fa-heart fa-stack-1x full-heart"></i>   
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="cards">
-                <a href="./pages-menus/menu3.html" class="cards__link">
-                    <img class="cards__img" src="./images/restaurants/française.jpg" alt="plat" />
-                    <div class="cards__description">
-                        <div>
-                            <h2 class="cards__title">À la française</h2>
-                            <p class="cards__city">Cité Rouge</p>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="./pages-menus/menu3.html" class="cards__link">
+                        <img class="cards__img" src="./images/restaurants/française.jpg" alt="plat" />
+                        <div class="cards__description">
+                            <div>
+                                <h2 class="cards__title">À la française</h2>
+                                <p class="cards__city">Cité Rouge</p>
+                            </div>
+                            <span class="cards__like-btn fa-stack">
+                                <i class="far fa-heart fa-stack-1x empty-heart"></i>
+                                <i class="fas fa-heart fa-stack-1x full-heart"></i>
+                            </span>
                         </div>
-                        <span class="cards__like-btn fa-stack">
-                            <i class="far fa-heart fa-stack-1x empty-heart"></i>
-                            <i class="fas fa-heart fa-stack-1x full-heart"></i>   
-                        </span>
-                    </div>
-                </a>
-            </div>
-            <div class="cards">
-                <a href="./pages-menus/menu4.html" class="cards__link">
-                    <img class="cards__img" src="./images/restaurants/delice.jpg" alt="plat" />
-                    <div class="cards__description">
-                        <div>
-                            <h2 class="cards__title">Le délice des sens</h2>
-                            <p class="cards__city">Folie-Méricourt</p>
+                    </a>
+                </div>
+                <div class="cards">
+                    <a href="./pages-menus/menu4.html" class="cards__link">
+                        <img class="cards__img" src="./images/restaurants/delice.jpg" alt="plat" />
+                        <div class="cards__description">
+                            <div>
+                                <h2 class="cards__title">Le délice des sens</h2>
+                                <p class="cards__city">Folie-Méricourt</p>
+                            </div>
+                            <span class="cards__like-btn fa-stack">
+                                <i class="far fa-heart fa-stack-1x empty-heart"></i>
+                                <i class="fas fa-heart fa-stack-1x full-heart"></i>
+                            </span>
                         </div>
-                        <span class="cards__like-btn fa-stack">
-                            <i class="far fa-heart fa-stack-1x empty-heart"></i>
-                            <i class="fas fa-heart fa-stack-1x full-heart"></i>   
-                        </span>
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
