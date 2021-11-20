@@ -297,6 +297,8 @@ form .location-icon {
 .menu-banner {
   width: 100%;
   height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .menu {
@@ -391,11 +393,11 @@ form .location-icon {
   width: 0px;
   height: 0px;
   overflow: hidden;
-  -webkit-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
+  -webkit-transition: width 1s ease-out;
+  transition: width 1s ease-out;
 }
 
 .dish__cards:hover {
@@ -418,9 +420,7 @@ form .location-icon {
 
 .dish__cards:hover .dish__checked {
   position: relative;
-  visibility: visible;
-  display: initial;
-  padding: 20px 10px 15px 10px;
+  padding: 20px 0px 15px 0px;
   width: 25%;
   height: 100%;
 }
@@ -430,8 +430,8 @@ form .location-icon {
   font-size: 2em;
   color: white;
   margin-left: 10px;
-  -webkit-animation: spin .5s forwards;
-          animation: spin .5s forwards;
+  -webkit-animation: spin 2s forwards;
+          animation: spin 2s forwards;
 }
 
 @-webkit-keyframes spin {
@@ -547,8 +547,26 @@ form .location-icon {
   }
 }
 
+@media only screen and (min-width: 431px) and (max-width: 2000px) {
+  .menu .menu--flex {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .menu .dish__title {
+    margin: auto;
+  }
+  .menu .dish__cards {
+    margin: auto;
+    margin-top: 25px;
+    width: 60%;
+  }
+  .menu .dish__cards:hover .check__icon {
+    margin-left: 35%;
+  }
+}
+
 .loader__section {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   display: -webkit-box;
