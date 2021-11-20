@@ -356,7 +356,6 @@ form .location-icon {
       -ms-flex-align: end;
           align-items: flex-end;
   background-color: white;
-  padding: 15px 10px 15px 10px;
   margin-top: 25px;
   border-radius: 15px;
   cursor: pointer;
@@ -369,6 +368,7 @@ form .location-icon {
 
 .dish__name {
   width: 100%;
+  padding: 0 10px;
   font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
@@ -377,6 +377,7 @@ form .location-icon {
 
 .dish__ingredients {
   width: 100%;
+  padding: 0 10px 15px 10px;
   font-size: 0.9em;
   overflow: hidden;
   white-space: nowrap;
@@ -386,58 +387,72 @@ form .location-icon {
 .dish__price {
   height: 100%;
   font-weight: bold;
-  padding-left: 10px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 0;
 }
 
 .dish__checked {
+  padding: 20px 0px 15px 0px;
   width: 0px;
-  height: 0px;
+  height: 100%;
   overflow: hidden;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  -webkit-transition: width 1s ease-out;
-  transition: width 1s ease-out;
+  -webkit-transition: width .5s ease-out;
+  transition: width .5s ease-out;
+}
+
+.dish__checked .check__icon {
+  text-align: center;
+  font-size: 2em;
+  margin-left: 30%;
+  color: white;
+  -webkit-animation: spin-back 1s infinite;
+          animation: spin-back 1s infinite;
+}
+
+@-webkit-keyframes spin-back {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+}
+
+@keyframes spin-back {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
 }
 
 .dish__cards:hover {
   padding: 0;
 }
 
-.dish__cards:hover .dish__name {
-  padding: 0 10px;
-}
-
-.dish__cards:hover .dish__ingredients {
-  padding: 0 10px 15px 10px;
-}
-
-.dish__cards:hover .dish__price {
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 0;
-}
-
 .dish__cards:hover .dish__checked {
-  position: relative;
-  padding: 20px 0px 15px 0px;
-  width: 25%;
+  width: 30%;
   height: 100%;
 }
 
 .dish__cards:hover .dish__checked .check__icon {
-  text-align: center;
-  font-size: 2em;
-  color: white;
-  margin-left: 10px;
-  -webkit-animation: spin 2s forwards;
-          animation: spin 2s forwards;
+  -webkit-animation: spin 1s forwards;
+          animation: spin 1s forwards;
 }
 
 @-webkit-keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
@@ -447,8 +462,8 @@ form .location-icon {
 
 @keyframes spin {
   0% {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   100% {
     -webkit-transform: rotate(360deg);
