@@ -83,30 +83,20 @@
     }
 
     &__checked{
-        padding: 20px 0px 15px 0px;
+        padding: 25px 0px 20px 0px;
         width: 0px;
         height: 100%;
         overflow: hidden;
         background-color: $color-3;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        transition: width .5s ease-out;
+        transition: width .5s ease;
+        text-align: center;
 
         .check__icon{
-            text-align: center;
-            font-size: 2em;
-            margin-left: 30%;
+            font-size: 1.3em;
             color: white;
-            animation: spin-back 1s infinite;
-        }
-
-        @keyframes spin-back {
-            0%{
-                transform: rotate(360deg);
-            }
-            100%{
-                transform: rotate(180deg);
-            }
+            transform: rotate(0);
         }
     }
     
@@ -114,20 +104,12 @@
         padding: 0;
         
         .dish__checked{
-            width: 30%;
+            width: 21%;
             height: 100%;
 
             .check__icon{
-                animation: spin 1s forwards;
-            }
-
-            @keyframes spin {
-                0%{
-                    transform: rotate(180deg);
-                }
-                100%{
-                    transform: rotate(360deg);
-                }
+                transform: rotate(360deg);
+                transition: transform .5s ease;
             }
         }
     }
@@ -226,13 +208,6 @@
                 margin: auto;
                 margin-top: 25px;
                 width: 60%;
-            }
-
-            &__cards:hover{
-            
-                .check__icon{
-                    margin-left: 35%;
-                }
             }
         }
     }

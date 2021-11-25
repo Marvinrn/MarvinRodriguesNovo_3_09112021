@@ -393,46 +393,23 @@ form .location-icon {
 }
 
 .dish__checked {
-  padding: 20px 0px 15px 0px;
+  padding: 25px 0px 20px 0px;
   width: 0px;
   height: 100%;
   overflow: hidden;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  -webkit-transition: width .5s ease-out;
-  transition: width .5s ease-out;
+  -webkit-transition: width .5s ease;
+  transition: width .5s ease;
+  text-align: center;
 }
 
 .dish__checked .check__icon {
-  text-align: center;
-  font-size: 2em;
-  margin-left: 30%;
+  font-size: 1.3em;
   color: white;
-  -webkit-animation: spin-back 1s infinite;
-          animation: spin-back 1s infinite;
-}
-
-@-webkit-keyframes spin-back {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-}
-
-@keyframes spin-back {
-  0% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  100% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
 }
 
 .dish__cards:hover {
@@ -440,35 +417,17 @@ form .location-icon {
 }
 
 .dish__cards:hover .dish__checked {
-  width: 30%;
+  width: 21%;
   height: 100%;
 }
 
 .dish__cards:hover .dish__checked .check__icon {
-  -webkit-animation: spin 1s forwards;
-          animation: spin 1s forwards;
-}
-
-@-webkit-keyframes spin {
-  0% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  0% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
 .order {
@@ -574,9 +533,6 @@ form .location-icon {
     margin: auto;
     margin-top: 25px;
     width: 60%;
-  }
-  .menu .dish__cards:hover .check__icon {
-    margin-left: 35%;
   }
 }
 
