@@ -584,6 +584,7 @@ form .location-icon {
 
 .loader__section .loader {
   position: relative;
+  margin: auto;
   width: 75px;
   height: 75px;
   border-radius: 50%;
