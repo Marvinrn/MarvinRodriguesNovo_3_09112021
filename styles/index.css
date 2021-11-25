@@ -542,6 +542,27 @@ form .location-icon {
   }
 }
 
+@media only screen and (min-width: 1026px) and (max-width: 2000px) {
+  .dish--flex {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .dish--flex .dish__cards {
+    margin: auto;
+    margin-top: 25px;
+    width: 100%;
+  }
+}
+
 .loader__section {
   position: fixed;
   top: 0;

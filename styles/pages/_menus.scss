@@ -210,3 +210,22 @@
         }
     }
 }
+
+
+@media only screen and (min-width : 1026px) and (max-width : 2000px){
+    .dish--flex{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .dish{
+
+            &__cards{
+                margin: auto;
+                margin-top: 25px;
+                width: 100%;
+            }
+        }
+    }
+}
