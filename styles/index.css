@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -41,6 +41,7 @@ form .form__input {
   background-color: #e9e5e5;
   border: none;
   font-weight: bold;
+  color: black;
 }
 
 form .form__input:focus {
@@ -61,7 +62,7 @@ form .location-icon {
   padding-bottom: 40px;
   margin-left: auto;
   margin-right: auto;
-  width: 65%;
+  width: 75%;
   text-align: center;
 }
 
@@ -72,15 +73,16 @@ form .location-icon {
 .intro__description {
   margin-top: 10px;
   color: #757575;
+  font-weight: lighter;
 }
 
 .intro__btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   margin-top: 15px;
-  padding: 10px;
+  padding: 15px 20px;
   color: white;
-  border: 2px solid white;
+  border: none;
   border-radius: 100px;
   cursor: pointer;
 }
@@ -98,6 +100,10 @@ form .location-icon {
   margin-right: 20px;
 }
 
+.functionality__title {
+  font-weight: bold;
+}
+
 .functionality .tab {
   background-color: rgba(233, 229, 229, 0.4);
   display: -webkit-box;
@@ -111,7 +117,7 @@ form .location-icon {
           align-items: center;
   width: 100%;
   margin-top: 25px;
-  padding: 20px 0 20px 0;
+  padding: 25px 0;
   -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
           box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
   border-radius: 25px;
@@ -157,7 +163,7 @@ form .location-icon {
   position: relative;
   margin-top: 20px;
   width: 100%;
-  height: 300px;
+  height: 280px;
   border-radius: 25px;
   background-color: white;
   -webkit-box-shadow: 0 2px 15px lightgrey;
@@ -194,7 +200,7 @@ form .location-icon {
 }
 
 .restaurants__section .restaurants .cards__description {
-  padding-top: 15px;
+  padding-top: 10px;
   margin-left: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -207,34 +213,36 @@ form .location-icon {
           align-items: center;
 }
 
+.restaurants__section .restaurants .cards__title {
+  font-size: 1.3em;
+}
+
 .restaurants__section .restaurants .cards__city {
-  color: #757575;
+  font-weight: lighter;
 }
 
 .restaurants__section .restaurants .cards__like-btn {
   margin-right: 25px;
-  font-size: 2em;
 }
 
 .restaurants__section .restaurants .cards__like-btn .empty-heart {
-  font-size: 1.1em;
-}
-
-.restaurants__section .restaurants .cards__like-btn .empty-heart:hover {
-  color: #9356DC;
+  font-size: 1.5em;
+  margin-left: 15px;
 }
 
 .restaurants__section .restaurants .cards__like-btn .full-heart {
-  color: white;
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
+  margin-left: 15px;
+  color: transparent;
+  -webkit-transition: -webkit-transform 1s ease;
+  transition: -webkit-transform 1s ease;
+  transition: transform 1s ease;
+  transition: transform 1s ease, -webkit-transform 1s ease;
 }
 
 .restaurants__section .restaurants .cards__like-btn .full-heart:hover {
-  visibility: visible;
   color: #9356DC;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.8);
+          transform: scale(1.8);
 }
 
 @media only screen and (min-width: 431px) and (max-width: 1025px) {
@@ -343,6 +351,7 @@ form .location-icon {
 .dish__title {
   border-bottom: 4px solid #99E2D0;
   width: 50px;
+  font-weight: lighter;
 }
 
 .dish__cards {
@@ -369,7 +378,6 @@ form .location-icon {
 .dish__name {
   width: 100%;
   padding: 0 10px;
-  font-weight: bold;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -378,7 +386,8 @@ form .location-icon {
 .dish__ingredients {
   width: 100%;
   padding: 0 10px 15px 10px;
-  font-size: 0.9em;
+  font-size: 0.85em;
+  font-weight: lighter;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -386,7 +395,6 @@ form .location-icon {
 
 .dish__price {
   height: 100%;
-  font-weight: bold;
   padding-right: 15px;
   padding-bottom: 15px;
   padding-left: 0;
@@ -442,14 +450,12 @@ form .location-icon {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
+  padding: 15px 25px;
   color: white;
-  border: 2px solid white;
+  border: none;
   border-radius: 100px;
+  font-size: 1.3em;
   cursor: pointer;
-  font-size: 1.5em;
 }
 
 .order__btn:hover {
@@ -665,7 +671,7 @@ form .location-icon {
 
 .header__logo {
   display: block;
-  width: 200px;
+  width: 150px;
   margin: auto;
   padding-top: 25px;
 }
@@ -678,7 +684,7 @@ form .location-icon {
 
 .footer__logo {
   font-family: "Shrikhand", sans-serif;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: white;
   margin-left: 15px;
   margin-bottom: 15px;
@@ -688,7 +694,8 @@ form .location-icon {
   margin-left: 15px;
   margin-top: 10px;
   color: white;
-  font-size: 1.2em;
+  font-size: 1em;
+  font-weight: lighter;
   cursor: pointer;
   text-decoration: none;
 }
@@ -701,6 +708,7 @@ form .location-icon {
 
 .footer__icon {
   margin-right: 10px;
+  font-size: 0.8em;
 }
 
 .footer .contact__link {
