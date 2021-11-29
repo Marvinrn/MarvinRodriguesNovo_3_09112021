@@ -125,7 +125,7 @@ form .location-icon {
 }
 
 .functionality .tab:hover {
-  background-color: rgba(246, 191, 255, 0.4);
+  background-color: rgba(215, 155, 255, 0.192);
 }
 
 .functionality .tab:hover .tab__icon {
@@ -187,7 +187,7 @@ form .location-icon {
 
 .restaurants__section .restaurants .cards__new {
   background-color: #99E2D0;
-  color: #156415;
+  color: #3b8d78;
   position: absolute;
   top: 15px;
   right: 0;
@@ -312,7 +312,7 @@ form .location-icon {
 .menu {
   position: relative;
   bottom: 60px;
-  background-color: #e9e5e5;
+  background-color: #f8f8f8;
   height: 100%;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
@@ -351,6 +351,7 @@ form .location-icon {
 .dish__title {
   border-bottom: 4px solid #99E2D0;
   width: 50px;
+  font-size: 1.2em;
   font-weight: lighter;
 }
 
@@ -367,6 +368,8 @@ form .location-icon {
   background-color: white;
   margin-top: 25px;
   border-radius: 15px;
+  -webkit-box-shadow: 0 2px 18px lightgrey;
+          box-shadow: 0 2px 18px lightgrey;
   cursor: pointer;
 }
 
@@ -444,13 +447,14 @@ form .location-icon {
   margin-right: auto;
   width: 65%;
   text-align: center;
+  font-size: 0.8em;
 }
 
 .order__btn {
   background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(#FF79DA, #9356DC);
   margin-top: 15px;
-  padding: 15px 25px;
+  padding: 20px 55px;
   color: white;
   border: none;
   border-radius: 100px;
@@ -527,7 +531,7 @@ form .location-icon {
   }
 }
 
-@media only screen and (min-width: 431px) and (max-width: 2000px) {
+@media only screen and (min-width: 600px) and (max-width: 2000px) {
   .menu .menu--flex {
     -ms-flex-pack: distribute;
         justify-content: space-around;

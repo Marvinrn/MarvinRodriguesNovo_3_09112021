@@ -87,7 +87,7 @@ form{
         cursor: pointer;
 
         &:hover{
-            background-color: rgba(246, 191, 255, 0.4);
+            background-color: rgba(215, 155, 255, 0.192);
 
             .tab__icon{
                 color: $color-1;
@@ -148,7 +148,7 @@ form{
 
             &__new{
                 background-color: $color-3;
-                color: rgb(21, 100, 21);
+                color: rgb(59, 141, 120);
                 position: absolute;
                 top: 15px;
                 right: 0;
