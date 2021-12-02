@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 * {
   -webkit-box-sizing: border-box;
@@ -17,6 +17,26 @@ body {
 
 .menu--body {
   background-color: #f8f8f8;
+}
+
+.btn {
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin: 15px auto;
+  width: 190px;
+  padding: 15px 20px;
+  color: white;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
+          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
 }
 
 form {
@@ -76,23 +96,6 @@ form .location-icon {
   font-weight: lighter;
 }
 
-.intro__btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  margin-top: 15px;
-  padding: 15px 20px;
-  color: white;
-  border: none;
-  border-radius: 100px;
-  cursor: pointer;
-}
-
-.intro__btn:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
-}
-
 .functionality {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -122,6 +125,8 @@ form .location-icon {
           box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
   border-radius: 25px;
   cursor: pointer;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .functionality .tab:hover {
@@ -271,7 +276,7 @@ form .location-icon {
   }
 }
 
-@media only screen and (min-width: 1025px) and (max-width: 2000px) {
+@media only screen and (min-width: 1025px) {
   .functionality .functionality--flex {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -284,7 +289,7 @@ form .location-icon {
   .functionality .functionality--flex .tab {
     position: relative;
     margin-right: 25px;
-    width: 300px;
+    width: 100%;
   }
   .functionality .functionality--flex .tab__rank {
     position: absolute;
@@ -455,24 +460,6 @@ form .location-icon {
   width: 65%;
   text-align: center;
   font-size: 0.8em;
-}
-
-.order__btn {
-  background: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
-  background: linear-gradient(#FF79DA, #9356DC);
-  margin-top: 15px;
-  padding: 20px 55px;
-  color: white;
-  border: none;
-  border-radius: 100px;
-  font-size: 1.3em;
-  cursor: pointer;
-}
-
-.order__btn:hover {
-  opacity: 0.8;
-  -webkit-box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
-          box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
 }
 
 .entry--animation {

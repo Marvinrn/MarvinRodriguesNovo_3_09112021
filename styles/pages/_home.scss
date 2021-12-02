@@ -47,21 +47,6 @@ form{
         color: rgb(117, 117, 117);
         font-weight: lighter;
     }
-
-    &__btn{
-        background: linear-gradient($color-2, $color-1);
-        margin-top: 15px;
-        padding: 15px 20px;
-        color: white;
-        border: none;
-        border-radius: 100px;
-        cursor: pointer;
-
-        &:hover{
-            opacity: 0.8;
-            box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
-        }
-    }
 }
 
 .functionality{
@@ -85,6 +70,7 @@ form{
         box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.116);
         border-radius: 25px;
         cursor: pointer;
+        transition:  1s ease;
 
         &:hover{
             background-color: rgba(215, 155, 255, 0.192);
@@ -241,7 +227,7 @@ form{
 
 }
 
-@media only screen and (min-width : 1025px) and (max-width : 2000px){
+@media only screen and (min-width : 1025px){
     .functionality{
 
         .functionality--flex{
@@ -251,7 +237,7 @@ form{
             .tab{
                 position: relative;
                 margin-right: 25px;
-                width: 300px;
+                width: 100%;
                 &__rank{
                     position: absolute;
                     left: 0;
