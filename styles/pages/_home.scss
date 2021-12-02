@@ -187,12 +187,15 @@ form{
 
                 .full-heart{
                     margin-left: 15px;
+                    font-size: 0;
+                    background: linear-gradient( to top, $color-2, $color-1);
+                    background-clip: text;
                     color: transparent;
-                    transition: transform 1s ease;
+                    -webkit-background-clip: text;
+                    transition: font-size 1s ease;
                 
                     &:hover{
-                        color: $color-1;
-                        transform: scale(1.8);
+                        font-size: 1.7em;
                     }
                 }
             }

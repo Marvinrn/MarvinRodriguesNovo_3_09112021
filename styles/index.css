@@ -232,17 +232,18 @@ form .location-icon {
 
 .restaurants__section .restaurants .cards__like-btn .full-heart {
   margin-left: 15px;
+  font-size: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
   color: transparent;
-  -webkit-transition: -webkit-transform 1s ease;
-  transition: -webkit-transform 1s ease;
-  transition: transform 1s ease;
-  transition: transform 1s ease, -webkit-transform 1s ease;
+  -webkit-background-clip: text;
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease;
 }
 
 .restaurants__section .restaurants .cards__like-btn .full-heart:hover {
-  color: #9356DC;
-  -webkit-transform: scale(1.8);
-          transform: scale(1.8);
+  font-size: 1.7em;
 }
 
 @media only screen and (min-width: 431px) and (max-width: 1025px) {
