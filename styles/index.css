@@ -264,6 +264,12 @@ form .location-icon {
   }
 }
 
+@media only screen and (min-width: 1025px) and (max-width: 1191px) {
+  .restaurants__section .restaurants .cards__title {
+    font-size: 1.1em;
+  }
+}
+
 @media only screen and (min-width: 1025px) and (max-width: 2000px) {
   .functionality .functionality--flex {
     display: -webkit-box;
