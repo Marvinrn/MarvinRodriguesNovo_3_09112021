@@ -367,7 +367,7 @@ form .location-icon {
 
 .menu__like-btn {
   font-size: 1.5em;
-  margin-right: 50px;
+  margin-right: 25px;
   cursor: pointer;
 }
 
@@ -542,10 +542,10 @@ form .location-icon {
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 2000px) {
+@media only screen and (min-width: 600px) {
   .menu .menu--flex {
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    max-width: 1026px;
+    margin: auto;
   }
   .menu .dish__title {
     margin: auto;
@@ -557,9 +557,20 @@ form .location-icon {
   }
 }
 
-@media only screen and (min-width: 1026px) and (max-width: 2000px) {
+@media only screen and (min-width: 1026px) {
+  .menu .menu--flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 25px;
+  }
+  .menu__like-btn {
+    margin-right: 0px;
+  }
   .dish--flex {
+    max-width: 1026px;
     margin-top: 20px;
+    margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -574,7 +585,7 @@ form .location-icon {
   .dish--flex .dish__cards {
     margin: auto;
     margin-top: 25px;
-    width: 100%;
+    width: 310px;
   }
 }
 
