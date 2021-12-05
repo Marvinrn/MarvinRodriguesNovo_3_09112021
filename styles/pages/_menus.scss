@@ -125,55 +125,6 @@
     text-align: center;
     font-size: 0.8em;
 }
-/////////////////////////////////ANIMATIONS////////////////////////////////////////////////
-.entry--animation{
-    animation: first-appearing 1s;
-
-    @keyframes first-appearing {
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1; 
-        }
-        }
-    }
-
-.dish--animation{
-    animation: first-appearing 2s;
-
-    @keyframes first-appearing {
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-}
-
-.desert--animation{
-    animation: first-appearing 3s;
-
-    @keyframes first-appearing {
-        0%{
-            opacity: 0;
-        }
-        50%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-}
-
 
 @media only screen and (min-width : 600px){
 

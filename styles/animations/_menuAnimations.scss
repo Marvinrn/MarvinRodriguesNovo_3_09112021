@@ -1,0 +1,207 @@
+.entry--animation{
+    animation: first-appearing 0.2s;
+
+    @keyframes first-appearing {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1; 
+        }
+    }
+
+    .entry--animation1{
+        animation: entry1 .5s;
+
+        @keyframes entry1{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1; 
+            }
+        }  
+    }
+
+    .entry--animation2{
+        animation: entry2 .8s;
+
+        @keyframes entry2{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1; 
+            }
+        }
+    }
+
+    .entry--animation3{
+        animation: entry3 1s;
+
+        @keyframes entry3{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1; 
+            }
+        } 
+    }
+
+    .entry--animation4{
+        animation: entry4 1.2s;
+
+        @keyframes entry4{
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1; 
+            }
+        } 
+    }
+}
+
+.dish--animation{
+    animation: first-appearing 1.6s;
+
+    @keyframes first-appearing {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .dish--animation1{
+        animation: dish1 1.8s;
+
+        @keyframes dish1 {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+
+    .dish--animation2{
+        animation: dish2 2s;
+
+        @keyframes dish2 {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+
+    .dish--animation3{
+        animation: dish3 2.2s;
+
+        @keyframes dish3 {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.desert--animation{
+    animation: first-appearing 2.6s;
+
+    @keyframes first-appearing {
+        0%{
+            opacity: 0;
+        }
+        50%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+
+    .desert--animation1{
+        animation: desert1 2.8s;
+
+        @keyframes desert1 {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+
+    .desert--animation2{
+        animation: desert2 3s;
+
+        @keyframes desert2 {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+
+    .desert--animation3{
+        animation: desert3 3.2s;
+
+        @keyframes desert3 {
+            0%{
+                opacity: 0;
+            }
+            50%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+}
