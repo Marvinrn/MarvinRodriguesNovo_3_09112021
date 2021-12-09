@@ -139,16 +139,19 @@ form .location-icon {
 
 .functionality .tab__rank {
   position: absolute;
-  left: 10px;
   padding: 3px 7px 3px 7px;
   background-color: #9356DC;
   color: white;
   border-radius: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .functionality .tab__icon {
   margin-right: 30px;
   padding-left: 40px;
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
 }
 
 .restaurants__section {
@@ -162,6 +165,8 @@ form .location-icon {
   margin-bottom: 40px;
   margin-left: 20px;
   margin-right: 20px;
+  max-width: 1500px;
+  margin: auto;
 }
 
 .restaurants__section .restaurants .cards {
@@ -302,8 +307,8 @@ form .location-icon {
   }
   .functionality .functionality--flex .tab {
     position: relative;
-    margin: auto;
-    width: 300px;
+    margin: 35px;
+    width: 100%;
   }
   .functionality .functionality--flex .tab__rank {
     position: absolute;
@@ -366,9 +371,29 @@ form .location-icon {
 }
 
 .menu__like-btn {
-  font-size: 1.5em;
   margin-right: 25px;
   cursor: pointer;
+}
+
+.menu__like-btn .empty-heart {
+  font-size: 1.5em;
+  margin-left: 15px;
+}
+
+.menu__like-btn .full-heart {
+  margin-left: 15px;
+  font-size: 0;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  -webkit-transition: font-size 1s ease;
+  transition: font-size 1s ease;
+}
+
+.menu__like-btn .full-heart:hover {
+  font-size: 1.7em;
 }
 
 .dish {
@@ -399,6 +424,7 @@ form .location-icon {
   border-radius: 15px;
   -webkit-box-shadow: 0 2px 18px lightgrey;
           box-shadow: 0 2px 18px lightgrey;
+  overflow: hidden;
   cursor: pointer;
 }
 
@@ -434,14 +460,15 @@ form .location-icon {
 
 .dish__checked {
   padding: 25px 0px 20px 0px;
-  width: 0px;
+  margin-right: -21%;
+  width: 21%;
   height: 100%;
   overflow: hidden;
   background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  -webkit-transition: width .5s ease;
-  transition: width .5s ease;
+  -webkit-transition: margin-right .5s ease;
+  transition: margin-right .5s ease;
   text-align: center;
 }
 
@@ -457,8 +484,7 @@ form .location-icon {
 }
 
 .dish__cards:hover .dish__checked {
-  width: 21%;
-  height: 100%;
+  margin: 0;
 }
 
 .dish__cards:hover .dish__checked .check__icon {
@@ -500,9 +526,6 @@ form .location-icon {
     display: -ms-flexbox;
     display: flex;
     padding-top: 25px;
-  }
-  .menu__like-btn {
-    margin-right: 0px;
   }
   .dish--flex {
     max-width: 1026px;
@@ -686,8 +709,6 @@ form .location-icon {
 }
 
 .footer__link:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
   font-weight: bold;
 }
 
@@ -698,6 +719,30 @@ form .location-icon {
 
 .footer .contact__link {
   margin-top: 5px;
+}
+
+@media only screen and (min-width: 431px) {
+  .footer {
+    background-color: #333333;
+    padding-top: 25px;
+    padding-bottom: 35px;
+  }
+  .footer__div {
+    max-width: 1500px;
+    margin: auto;
+  }
+  .footer__div .footer__logo {
+    text-align: center;
+  }
+  .footer__div .footer__link {
+    text-align: center;
+  }
+  .footer__div .footer__icon {
+    text-align: center;
+  }
+  .footer__div .contact__link {
+    text-align: center;
+  }
 }
 
 .entry--animation {
@@ -711,9 +756,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -723,9 +772,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -740,9 +793,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -752,9 +809,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -769,9 +830,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -781,9 +846,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -798,9 +867,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -810,9 +883,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -827,9 +904,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -839,9 +920,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -856,9 +941,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -873,9 +962,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -885,9 +978,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -902,9 +999,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -914,9 +1015,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -931,9 +1036,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -943,9 +1052,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -960,9 +1073,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -977,9 +1094,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -989,9 +1110,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1006,9 +1131,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1018,9 +1147,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1035,9 +1168,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1047,9 +1184,13 @@ form .location-icon {
   }
   50% {
     opacity: 0;
+    -webkit-transform: translateY(1rem);
+            transform: translateY(1rem);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 /*# sourceMappingURL=index.css.map */

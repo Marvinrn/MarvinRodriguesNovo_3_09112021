@@ -25,9 +25,27 @@
     }
 
     &__like-btn{
-        font-size: 1.5em;
         margin-right: 25px;
         cursor: pointer;
+        
+        .empty-heart{
+            font-size: 1.5em;
+            margin-left: 15px;
+        }
+
+        .full-heart{
+            margin-left: 15px;
+            font-size: 0;
+            background: linear-gradient( to top, $color-2, $color-1);
+            background-clip: text;
+            color: transparent;
+            -webkit-background-clip: text;
+            transition: font-size 1s ease;
+        
+            &:hover{
+                font-size: 1.7em;
+            }
+        }
     }
 }
 
@@ -51,6 +69,7 @@
         margin-top: 25px;
         border-radius: 15px;
         box-shadow: 0 2px 18px lightgrey;
+        overflow: hidden;
         cursor: pointer;
     }
 
@@ -86,13 +105,14 @@
 
     &__checked{
         padding: 25px 0px 20px 0px;
-        width: 0px;
+        margin-right: -21%;
+        width: 21%;
         height: 100%;
         overflow: hidden;
         background-color: $color-3;
         border-top-right-radius: 15px;
         border-bottom-right-radius: 15px;
-        transition: width .5s ease;
+        transition: margin-right .5s ease;
         text-align: center;
 
         .check__icon{
@@ -106,8 +126,7 @@
         padding: 0;
         
         .dish__checked{
-            width: 21%;
-            height: 100%;
+            margin: 0;
 
             .check__icon{
                 transform: rotate(360deg);
@@ -157,10 +176,6 @@
         .menu--flex{
             display: flex;
             padding-top: 25px;
-        }
-    
-        &__like-btn{
-            margin-right: 0px;
         }
     }
 

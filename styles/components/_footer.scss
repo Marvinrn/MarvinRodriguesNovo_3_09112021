@@ -21,7 +21,6 @@
         text-decoration: none;
 
         &:hover{
-            transform: scale(1.01);
             font-weight: bold;
         }
     }
@@ -33,4 +32,35 @@
         
     .contact__link{
         margin-top: 5px;
-    }   }
+    }   
+}
+
+@media only screen and (min-width : 431px){
+
+    .footer{
+        background-color: rgb(51, 51, 51);
+        padding-top: 25px;
+        padding-bottom: 35px;
+            
+        &__div{
+            max-width: 1500px;
+            margin: auto;
+
+            .footer__logo{
+                text-align: center;
+            }
+
+            .footer__link{
+                text-align: center;
+            }
+
+            .footer__icon{
+                text-align: center;
+            }
+                
+            .contact__link{
+                text-align: center;
+            }
+        }
+    }
+}
