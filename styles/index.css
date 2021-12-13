@@ -166,7 +166,6 @@ form .location-icon {
   margin-left: 20px;
   margin-right: 20px;
   max-width: 1500px;
-  margin: auto;
 }
 
 .restaurants__section .restaurants .cards {
@@ -283,10 +282,6 @@ form .location-icon {
   }
 }
 
-.restaurants__section .restaurants__title {
-  text-align: center;
-}
-
 @media only screen and (min-width: 1025px) {
   .functionality {
     max-width: 1500px;
@@ -313,6 +308,9 @@ form .location-icon {
   .functionality .functionality--flex .tab__rank {
     position: absolute;
     left: 0;
+  }
+  .restaurants__section .restaurants {
+    margin: auto;
   }
   .restaurants__section .restaurants__title {
     text-align: center;

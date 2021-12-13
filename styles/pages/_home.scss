@@ -109,7 +109,6 @@ form{
         margin-left: 20px;
         margin-right: 20px;
         max-width: 1500px;
-        margin: auto;
 
 
         .cards{
@@ -217,7 +216,7 @@ form{
     .restaurants__section{
 
         .restaurants{
-        
+            
             .cards{
                 
                 &__title{
@@ -231,16 +230,6 @@ form{
         }
     }
 
-}
-
-.restaurants__section{
-
-    .restaurants{
-        
-        &__title{
-            text-align: center;
-        }
-    }
 }
 
 @media only screen and (min-width : 1025px){
@@ -275,6 +264,7 @@ form{
 
 
         .restaurants{
+            margin: auto;
 
             &__title{
                 text-align: center;
